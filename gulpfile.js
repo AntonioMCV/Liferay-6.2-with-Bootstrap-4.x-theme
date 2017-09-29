@@ -7,11 +7,11 @@ liferayThemeTasks.registerTasks({
 	gulp: gulp,
 	hookFn: function(gulp) {
 
-		gulp.hook('before:build:src', function(done) {
+		gulp.hook('before:build', function(done) {
 
 			gulp.src('node_modules/bootstrap/*')
-			.pipe(gulp.dest('src/css/bootstrap/'));
-			console.log('bootstrap4 copied');
+			.pipe(gulp.dest('src/css/bootstrap/'))
+			.on('end', done);
 		});
 	}
 });
