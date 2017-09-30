@@ -11,7 +11,7 @@ $FontAwesomePath: "aui/alloy-font-awesome/font" !default;
 	$iconWhiteSpritePath: '../images/aui/glyphicons-halflings-white.png' !default;
 
 	//@import "aui/bootstrap"; // Remove >> Bootstrap 2.3.2
-	@import "css/bootstrap/scss/bootstrap";
+	@import "bootstrap/bootstrap";
 	@import "aui_custom";
 	//@import "aui/responsive"; // Remove >> Bootstrap 2.3.2 responsive
 	@import "liferay_custom";
