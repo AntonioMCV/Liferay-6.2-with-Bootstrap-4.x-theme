@@ -1,0 +1,16 @@
+@if $enable-compatibility-grid {
+	@for $i from 1 through $grid-columns {
+		.span#{$i} {
+			@extend .col-md-#{$i};
+		}
+
+		.offset#{$i} {
+			@extend .ml-md-auto;
+		}
+	}
+
+} @else {
+	@if $enable-warnings {
+		@warn "compatibility-grid is disabled";
+	}
+}

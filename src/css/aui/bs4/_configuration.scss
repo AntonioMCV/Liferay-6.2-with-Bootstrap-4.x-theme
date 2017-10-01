@@ -1,0 +1,37 @@
+// Warnings and debugging
+
+$enable-debugging:						true !default;
+$enable-warnings:						true !default;
+
+// Components
+
+$enable-compatibility-badge:			true !default;
+$enable-compatibility-table:			true !default;
+$enable-compatibility-bs3-utilities:	true !default;
+$enable-compatibility-btn:				true !default;
+$enable-compatibility-dropdown:			true !default;
+$enable-compatibility-grid:				true !default;
+$enable-compatibility-img:				true !default;
+$enable-compatibility-label:			true !default;
+$enable-compatibility-breadcrumb:		true !default;
+$enable-compatibility-form:				true !default;
+$enable-compatibility-label:			true !default;
+$enable-compatibility-nav:				true !default;
+$enable-compatibility-pager:			true !default;
+$enable-compatibility-pagination: 		true !default;
+$enable-compatibility-panel:			true !default;
+$enable-compatibility-well:				true !default;
+
+$enable-compatibility-glyphicons-icons:	true !default;
+
+$icon-font-path:						"glyphicons/" !default;
+$icon-font-name:						"glyphicons-halflings-regular" !default;
+$icon-font-svg-id:						"glyphicons_halflingsregular" !default;
+
+// If you need containers work as a row
+
+$enable-container-as-row:				false !default;
+
+// Components with deprecated spacing
+
+$default-deprecated-spacing:			'.mb-3' !default;

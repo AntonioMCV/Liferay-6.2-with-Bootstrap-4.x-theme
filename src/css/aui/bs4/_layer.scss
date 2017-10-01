@@ -1,0 +1,54 @@
+/*!
+ * Bootstrap v4.0.0-beta Compatibility layer from Bootstrap 2.3.2 extended
+ * By: Marcos Castro and Antonio Martinez
+ */
+
+@import "configuration";
+
+@import "mixins/mixins";
+
+@import "layer/glyphicons";
+
+@import "layer/grid";
+/* @import "layer/nav";
+@import "layer/pagination";
+@import "layer/panel";
+@import "layer/well";
+
+@import "layer/dropdown";
+@import "layer/btn";
+@import "layer/img";
+@import "layer/pager";
+@import "layer/breadcrumb";
+@import "layer/form";
+@import "layer/table";
+@import "layer/bs3-utilities";
+@import "layer/label";
+@import "layer/badge";
+
+@if $enable-container-as-row {
+	@include extend-class('.container','.row');
+	@include extend-class('.container-fluid','.row');
+}
+
+// General and temporal .disabled class
+
+.disabled {
+	opacity: 0.6;
+
+	@include box-shadow(none);
+}
+
+// Spacings
+
+@include extend-class('.progress, .panel, .well', #{$default-deprecated-spacing}); */
+
+// Alerts
+
+.alert {
+	@extend .alert-warning;
+}
+
+.alert-error {
+	@extend .alert-danger;
+}
