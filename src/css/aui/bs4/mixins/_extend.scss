@@ -1,9 +1,9 @@
-@mixin extend-class($bs3, $bs4) {
-	#{$bs3} {
+@mixin extend-class($bs2, $bs4) {
+	#{$bs2} {
 		@extend #{$bs4};
 
 		@if $enable-debugging {
-			@debug 'BS3 class' $bs3 'extended by:' $bs4 'class';
+			@debug 'BS2 to BS4 class: #{$bs2} -->> #{$bs4}';
 		}
 	}
 }

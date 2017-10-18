@@ -1,0 +1,20 @@
+@mixin layer-pagination-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  li > a {
+    padding: $padding-y $padding-x;
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+
+  li {
+    &:first-child {
+      .a {
+        @include border-left-radius($border-radius);
+      }
+    }
+    &:last-child {
+      .a {
+        @include border-right-radius($border-radius);
+      }
+    }
+  }
+}

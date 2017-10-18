@@ -1,0 +1,5 @@
+@if $enable-compatibility-btn {
+	@include extend-class('.btn-default','.btn-secondary');
+	@include extend-class('.btn-group-justified','.d-flex');
+	@include extend-class('.btn-group-justified .btn, .btn-group-justified .btn-group','.w-100');
+}

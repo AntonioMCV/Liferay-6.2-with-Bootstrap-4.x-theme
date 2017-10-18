@@ -1,0 +1,26 @@
+@if $enable-compatibility-pagination {
+	@include extend-class('.pagination > li > a','.page-link');
+
+	.pagination li {
+		&.active a {
+			z-index: 2;
+			color: $pagination-active-color;
+			background-color: $pagination-active-bg;
+			border-color: $pagination-active-border-color;
+		}
+
+		&.disabled a {
+			color: $pagination-disabled-color;
+			pointer-events: none;
+			background-color: $pagination-disabled-bg;
+			border-color: $pagination-disabled-border-color;
+		}
+	}
+
+	.pagination-lg {
+		@include layer-pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+	}
+	.pagination-sm {
+		@include layer-pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+	}
+}

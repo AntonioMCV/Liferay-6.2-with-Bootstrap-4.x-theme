@@ -1,0 +1,3 @@
+@if $enable-compatibility-breadcrumb {
+	@include extend-class('.breadcrumb li','.breadcrumb-item');
+}

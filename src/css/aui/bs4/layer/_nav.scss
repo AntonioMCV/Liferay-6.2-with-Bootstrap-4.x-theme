@@ -1,0 +1,50 @@
+@if $enable-compatibility-nav {
+	@include extend-class('.navbar','.navbar-expand-lg');
+	@include extend-class('.navbar .navbar-form','.form-inline');
+	@include extend-class('.navbar-nav > li, .nav > li','.nav-item');
+	@include extend-class('.navbar-nav > li > a, .nav > li > a','.nav-link');
+	//@include extend-class('.navbar-right','.ml-auto'); not use bs2
+	@include extend-class('.btn.navbar','.nav-item');
+	@include extend-class('.navbar-text','.mb-0');
+	@include extend-class('.navbar-fixed-top','.fixed-top');
+	//@include extend-class('.navbar-fixed-bottom','.fixed-bottom'); no show the last portlet controls
+	@include extend-class('.navbar','.bg-light');
+	//@include extend-class('.navbar-header','.d-block'); not use bs2
+
+	@include extend-class('.nav-stacked','.flex-column');
+	//@include extend-class('.nav-justified','.nav-fill, .text-center, .no-gutters'); not use bs2
+	//@include extend-class('.nav-justified > li','.col'); not use bs2
+
+	.nav-tabs > li {
+		margin-bottom: -$nav-tabs-border-width;
+
+		&.active > a {
+			background-color: $nav-tabs-link-active-bg;
+			border-color: $nav-tabs-link-active-border-color $nav-tabs-link-active-border-color $nav-tabs-link-active-bg;
+			color: $nav-tabs-link-active-color;
+		}
+
+		> a {
+			border: $nav-tabs-border-width solid transparent;
+
+			@include border-radius($nav-tabs-border-radius);
+		}
+	}
+
+	.nav-pills > li {
+		a {
+			@include border-radius($nav-pills-border-radius);
+		}
+
+		&.active a, &.show > a,  {
+			color: $nav-pills-link-active-color;
+			background-color: $nav-pills-link-active-bg;
+		}
+	}
+
+	//@include extend-class('.navbar-toggle','.navbar-toggler, .pull-right');
+	//@include extend-class('.navbar-toggle:after','.navbar-toggler-icon');
+
+	@include extend-class('.navbar','.navbar-light, .bg-light'); //bs2
+	@include extend-class('.navbar-inverse','.navbar-dark, .bg-dark');
+}

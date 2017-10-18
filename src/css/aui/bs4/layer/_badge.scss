@@ -1,0 +1,3 @@
+@if $enable-compatibility-badge {
+	@include extend-class('.badge','.badge, .badge-pill, .badge-secondary');
+}

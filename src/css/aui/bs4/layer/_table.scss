@@ -1,0 +1,3 @@
+@if $enable-compatibility-table {
+	@include extend-class('.table-condensed','.table-sm');
+}

@@ -1,0 +1,16 @@
+@if $enable-compatibility-bs3-utilities {
+	@include extend-class('.item','.carousel-item');
+	@include extend-class('.list-inline > li','.list-inline-item');
+	@include extend-class('.thumbnail','.card, .card-body');
+	@include extend-class('.text-help','.form-control-feedback');
+	@include extend-class('.pull-right','.float-right');
+	@include extend-class('.pull-left','.float-left');
+	@include extend-class('.center-block','.mx-auto');
+	@include extend-class('.hidden-xs','.d-none');
+	@include extend-class('.hidden-sm','.d-sm-none');
+	@include extend-class('.hidden-md','.d-md-none');
+	@include extend-class('.visible-xs','.d-block, .d-sm-none');
+	@include extend-class('.visible-sm','.d-block, .d-md-none');
+	@include extend-class('.visible-md','.d-block, .d-lg-none');
+	@include extend-class('.visible-lg','.d-block, .d-xl-none');
+}

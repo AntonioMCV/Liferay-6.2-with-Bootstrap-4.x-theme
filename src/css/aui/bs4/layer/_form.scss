@@ -1,0 +1,8 @@
+@if $enable-compatibility-form {
+	@include extend-class('.form-horizontal','.form-inline'); // looking better one
+	@include extend-class('.radio','.form-check');
+	@include extend-class('.checkbox','.form-check');
+	@include extend-class('.input-lg','.form-control-lg');
+	@include extend-class('.input-sm','.form-control-sm');
+	@include extend-class('.control-label','.form-control-label');
+}

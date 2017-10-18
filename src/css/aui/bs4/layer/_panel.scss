@@ -1,0 +1,19 @@
+@if $enable-compatibility-panel {
+	@include extend-class('.panel','.card');
+	@include extend-class('.panel-heading','.card-header');
+	@include extend-class('.panel-title','.m-0, .h6');
+	@include extend-class('.panel-body','.card-body');
+	@include extend-class('.panel-footer','.card-footer');
+
+	@include extend-class('.panel-primary .panel-heading','.bg-primary, .text-white');
+	@include extend-class('.panel-success .panel-heading','.bg-success, .text-white');
+	@include extend-class('.panel-info .panel-heading','.text-white, .bg-info');
+	@include extend-class('.panel-warning .panel-heading','.bg-warning');
+	@include extend-class('.panel-danger .panel-heading','.bg-danger, .text-white');
+
+	@include extend-class('.panel-primary','.border-primary');
+	@include extend-class('.panel-success','.border-success');
+	@include extend-class('.panel-info','.border-info');
+	@include extend-class('.panel-warning','.border-warning');
+	@include extend-class('.panel-danger','.border-danger');
+}

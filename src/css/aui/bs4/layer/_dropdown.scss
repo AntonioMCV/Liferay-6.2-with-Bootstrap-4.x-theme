@@ -1,0 +1,5 @@
+@if $enable-compatibility-dropdown {
+	@include extend-class('.dropdown-menu > .divider','.dropdown-divider');
+	@include extend-class('.dropdown-menu > li > a','.dropdown-item');
+	@include extend-class('.open','.show');
+}

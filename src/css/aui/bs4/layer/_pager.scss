@@ -1,0 +1,7 @@
+@if $enable-compatibility-pager {
+	@include extend-class('.pager','.list-unstyled, .text-center, .clearfix');
+	@include extend-class('.pager > li > a','.btn, .btn-outline-secondary');
+	@include extend-class('.pager > li','.d-inline-block');
+	@include extend-class('.pager .previous','.pull-left');
+	@include extend-class('.pager .next','.pull-right');
+}

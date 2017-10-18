@@ -1,0 +1,8 @@
+@if $enable-compatibility-label {
+	@include extend-class('.label','.badge, .badge-secondary');
+	@include extend-class('.label-primary','.badge-primary');
+	@include extend-class('.label-success','.badge-success');
+	@include extend-class('.label-info','.badge-info');
+	@include extend-class('.label-warning','.badge-warning');
+	@include extend-class('.label-danger','.badge-danger');
+}

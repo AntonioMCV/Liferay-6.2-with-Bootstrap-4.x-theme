@@ -10,7 +10,7 @@
 @import "layer/glyphicons";
 
 @import "layer/grid";
-/* @import "layer/nav";
+@import "layer/nav";
 @import "layer/pagination";
 @import "layer/panel";
 @import "layer/well";
@@ -41,7 +41,7 @@
 
 // Spacings
 
-@include extend-class('.progress, .panel, .well', #{$default-deprecated-spacing}); */
+@include extend-class('.progress, .panel, .well', #{$default-deprecated-spacing});
 
 // Alerts
 

@@ -1,3 +1,4 @@
-@import "bootstrap/bootstrap"; // Add bootstrap 4.0.0-beta
+@import "../../../../node_modules/bootstrap/scss/bootstrap"; // Add bootstrap 4.0.0-beta
 
 @import "layer";
+@import "bs_liferay_fixes";
